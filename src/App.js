@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@chakra-ui/react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import VideoSection from './components/VideoSection';
+import ServicesSection from './components/ServicesSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box bg="#F7FAFC">
+      <Navbar />
+      <HeroSection />
+      <VideoSection />
+      <ServicesSection />
+      <AboutSection />
+      <ContactSection />
+      <Footer />
+      <ScrollToTopButton />
+      <WhatsAppButton />
+    </Box>
   );
 }
 
