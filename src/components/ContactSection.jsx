@@ -3,9 +3,12 @@ import { Box, Heading, Text, Stack, Button } from '@chakra-ui/react';
 export default function ContactSection() {
   return (
     <Box id="iletisim" py={16} px={6} bg="gray.50">
-      <Heading textAlign="center" mb={6}>İletişim</Heading>
+      <Heading textAlign="center" mb={8}>İletişim</Heading>
 
       <Stack spacing={4} textAlign="center">
+        <Text fontSize={"lg"} fontWeight={"bold"}>
+          Ramazan Akça
+        </Text>
         <Text fontSize="lg">
           Telefon: <strong>0 (533) 501 30 17</strong>
         </Text>
